@@ -1,0 +1,11 @@
+{
+  "/upload": { "target": "http://localhost:8080", "secure": false },
+  "/download": { "target": "http://localhost:8080", "secure": false },
+  "/list": { "target": "http://localhost:8080", "secure": false },
+  "/share": { "target": "http://localhost:8080", "secure": false },
+  "/status": { "target": "http://localhost:8080", "secure": false },
+  "/cleanup-temp": { "target": "http://localhost:8080", "secure": false },
+  "/clear-leases": { "target": "http://localhost:8080", "secure": false },
+  "/verify-data": { "target": "http://localhost:8080", "secure": false },
+  "/api": { "target": "http://localhost:8080", "secure": false, "changeOrigin": true, "logLevel": "debug" }
+}

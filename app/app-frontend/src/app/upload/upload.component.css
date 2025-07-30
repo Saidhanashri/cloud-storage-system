@@ -1,0 +1,40 @@
+/* Remove box styling */
+.upload-container {
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Header */
+.upload-container h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* File input */
+.upload-container input[type="file"] {
+  margin-bottom: 10px;
+}
+
+/* Upload button */
+.upload-container button {
+  padding: 8px 16px;
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.upload-container button:hover {
+  background-color: #005fa3;
+}
+
+/* Success message (optional) */
+.upload-container p {
+  margin-top: 10px;
+  color: green;
+  font-weight: bold;
+}
+
+

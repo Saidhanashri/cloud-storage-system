@@ -1,0 +1,6 @@
+@echo off
+echo Compiling Cloud Storage System...
+javac -cp "lib/*" *.java
+echo Running Application...
+java -cp ".;lib/*" CloudOfCloudsStorageSystem
+pause

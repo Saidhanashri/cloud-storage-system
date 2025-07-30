@@ -1,0 +1,21 @@
+.download-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+input, button {
+  padding: 10px;
+  font-size: 16px;
+}
+button {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #115293;
+}
+

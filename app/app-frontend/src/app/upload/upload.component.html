@@ -1,0 +1,9 @@
+<div class="upload-container">
+  <h2>Upload File</h2>
+
+  <input type="text" [(ngModel)]="clientId" placeholder="Enter your client ID" />
+
+  <input type="file" (change)="onFileSelected($event)" />
+
+  <button (click)="onUpload()">Upload</button>
+</div>

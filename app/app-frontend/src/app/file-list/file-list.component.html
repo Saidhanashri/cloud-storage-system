@@ -1,0 +1,8 @@
+<h2>Uploaded Files</h2>
+
+<ul *ngIf="files && files.length > 0">
+  <li *ngFor="let file of files">{{ file }}</li>
+</ul>
+
+<p *ngIf="files?.length === 0">No files available.</p>
+

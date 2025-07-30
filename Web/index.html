@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cloud-of-Clouds Storage System</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="container">
+    <h1><img src="assets/cloud-storage.png" alt="Cloud Icon" class="cloud-icon" />
+        Cloud-of-Clouds Storage System</h1>
+    <nav class="nav-buttons">
+        <button onclick="showSection('uploadSection')">Upload</button>
+        <button onclick="showSection('downloadSection')">Download</button>
+        <button onclick="showSection('listSection')">List Files</button>
+        <button onclick="showSection('shareSection')">Share</button>
+        <button onclick="showSection('statusSection')">System Status</button>
+        <button onclick="showSection('maintenanceSection')">Maintenance</button>
+    </nav>
+
+    <!-- Upload -->
+    <div id="uploadSection" class="section">
+        <h2>📤 Upload File</h2>
+        <input type="file" id="uploadFile" />
+        <input type="text" id="uploadClientId" placeholder="Client ID" />
+        <button onclick="uploadFile()">Upload</button>
+        <p id="uploadStatus"></p>
+    </div>
+
+    <!-- Download -->
+    <div id="downloadSection" class="section" style="display: none;">
+        <h2>📥 Download File</h2>
+        <input type="text" id="downloadFileName" placeholder="File Name" />
+        <input type="text" id="downloadClientId" placeholder="Client ID" />
+        <button onclick="downloadFile()">Download</button>
+    </div>
+
+    <!-- List Files -->
+    <div id="listSection" class="section" style="display: none;">
+        <h2>📄 List Files</h2>
+        <input type="text" id="listClientId" placeholder="Client ID" />
+        <button onclick="listFiles()">List Files</button>
+        <pre id="fileListOutput"></pre>
+    </div>
+
+    <!-- Share -->
+    <div id="shareSection" class="section" style="display: none;">
+        <h2>📤 Share File</h2>
+        <input type="text" id="shareFileName" placeholder="File Name" />
+        <input type="text" id="yourClientId" placeholder="Your Client ID" />
+        <input type="text" id="targetClientId" placeholder="Target Client ID" />
+        <button onclick="shareFile()">Share</button>
+    </div>
+
+    <!-- System Status -->
+    <div id="statusSection" class="section" style="display: none;">
+        <h2>📊 System Status</h2>
+        <button onclick="checkSystemStatus()">Check Status</button>
+        <pre id="statusOutput"></pre>
+    </div>
+
+    <!-- Maintenance -->
+    <div id="maintenanceSection" class="section" style="display: none;">
+        <h2>🛠️ Maintenance</h2>
+        <button onclick="clearLeases()">Clear Expired Leases</button>
+        <button onclick="cleanupTemp()">Cleanup Temporary Files</button>
+        <button onclick="verifyData()">Verify Data Integrity</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

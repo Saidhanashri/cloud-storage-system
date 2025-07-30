@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="cloud-of-clouds-storage">
+    <output-path>$PROJECT_DIR$</output-path>
+    <root id="root">
+      <element id="archive" name="cloud_of_clouds_storage.jar">
+        <element id="module-output" name="cloud-of-clouds-storage" />
+      </element>
+    </root>
+  </artifact>
+</component>

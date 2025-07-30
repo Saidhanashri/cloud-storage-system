@@ -1,0 +1,20 @@
+ .status-container {
+   max-width: 600px;
+   margin: auto;
+   padding: 20px;
+   background: #fff;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+
+ .status-item {
+   margin-bottom: 15px;
+   padding: 10px;
+   border-left: 5px solid #007bff;
+   background: #f5faff;
+   border-radius: 5px;
+ }
+
+ .status-item span {
+   font-weight: bold;
+ }

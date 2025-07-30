@@ -1,0 +1,14 @@
+<!-- web/WEB-INF/web.xml -->
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         version="3.0">
+    <servlet>
+        <servlet-name>UploadServlet</servlet-name>
+        <servlet-class>com.cloudstorage.servlets.UploadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UploadServlet</servlet-name>
+        <url-pattern>/upload</url-pattern>
+    </servlet-mapping>
+
+    <!-- Add other servlet entries here -->
+</web-app>

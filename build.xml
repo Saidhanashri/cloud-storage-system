@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="CloudOfCloudsStorageSystem" default="compile" basedir="../src/config">
+    <property name="src.dir" value="src/main/java"/>
+    <property name="build.dir" value="build"/>
+    <property name="lib.dir" value="lib"/>
+    <property name="dist.dir" value="dist"/>
+
+    <path id="classpath">
+        <fileset dir="${lib.dir}">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+
+    <target name="clean">
+        <delete dir="build"/>
+        <delete dir="${dist.dir}"/>
+    </target>
+
+    <target name="init">
+        <mkdir dir="build"/>
+        <mkdir dir="${dist.dir}"/>
+    </target>
+
+    <target name="compile" depends="init">
+        <javac srcdir="${src.dir}" destdir="build" classpathref="classpath"/>
+    </target>
+
+    <target name="jar" depends="compile">
+        <jar destfile="${dist.dir}/cloud-storage-system.jar" basedir="build">
+            <manifest>
+                <attribute name="Main-Class" value="com.cloudstorage.CloudOfCloudsStorageSystem"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="run" depends="jar">
+        <java jar="${dist.dir}/cloud-storage-system.jar" fork="true"/>
+    </target>
+</project>
