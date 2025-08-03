@@ -3,7 +3,7 @@ A Potent Argument Retention Report in an Archetype Directory (Cloud of Clouds St
 
 This project implements a secure, distributed, and user-friendly cloud storage web application based on a **Cloud-of-Clouds architecture**. Users can upload, download, list, and share files while managing file storage across multiple cloud providers.
 
-## 📌 Features~~~~
+## 📌 Features
 
 - ✅ File Upload with client ID tagging
 - 📥 File Download by name and client ID
