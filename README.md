@@ -1,4 +1,5 @@
-# A Potent Argument Retention Report in an Archetype Directory ☁️(Cloud of Clouds Storage system) 
+📂 Internship Project:
+A Potent Argument Retention Report in an Archetype Directory (Cloud of Clouds Storage system) 
 
 This project implements a secure, distributed, and user-friendly cloud storage web application based on a **Cloud-of-Clouds architecture**. Users can upload, download, list, and share files while managing file storage across multiple cloud providers.
 
